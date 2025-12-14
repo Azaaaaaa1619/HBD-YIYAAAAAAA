@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Album 📸</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Mr+Dafoe&family=Oswald:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .album-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px 40px;
+            /* Top padding for header space */
+        }
+
+        .album-grid {
+            columns: 2 200px;
+            /* Simple masonry layout */
+            gap: 15px;
+        }
+
+        .album-item {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .album-item:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .album-item img {
+            width: 100%;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .album-caption {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            margin-top: 8px;
+            color: var(--text-white);
+            text-align: center;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: var(--text-yellow);
+            font-family: 'Oswald', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 20;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .album-grid {
+                columns: 2 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="home.html" class="back-btn">← Back</a>
+
+    <header class="nav-header" style="justify-content: center;">
+        <span class="nav-center" style="color: var(--text-yellow);">album</span>
+    </header>
+
+    <div class="album-container">
+        <div class="album-grid">
+            <div class="album-item">
+                <img src="assets/p1.jpg" alt="Memory 1">
+                <div class="album-caption">So Pretty! ✨</div>
+            </div>
+            <div class="album-item">
+                <img src="assets/p2.jpg" alt="Memory 2">
+                <div class="album-caption">Aesthetic Vibes 🌿</div>
+            </div>
+            <div class="album-item">
+                <img src="assets/p3.jpg" alt="Memory 3">
+                <div class="album-caption">Cute Pose! ✌️</div>
+            </div>
+            <div class="album-item">
+                <img src="assets/p4.jpg" alt="Memory 4">
+                <div class="album-caption">Raincoat Style ☔</div>
+            </div>
+            <div class="album-item">
+                <img src="assets/p5.jpg" alt="Memory 5">
+                <div class="album-caption">Selfie Queen 📸</div>
+            </div>
+            <div class="album-item">
+                <img src="assets/us.jpg" alt="Us Two">
+                <div class="album-caption">You & Me ❤️</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sparkle Script for continuity -->
+    <script>
+        // Copy minimalist sparkle logic
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.9) {
+                const sparkle = document.createElement('div');
+                sparkle.classList.add('sparkle');
+                sparkle.style.left = `${e.clientX}px`;
+                sparkle.style.top = `${e.clientY}px`;
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 800);
+            }
+        });
+    </script>
+</body>
+
+</html>

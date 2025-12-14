@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Mr+Dafoe&family=Oswald:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="home.html" class="back-btn">← Back</a>
+
+    <header class="nav-header" style="justify-content: center;">
+        <span class="nav-center" style="color: var(--text-yellow);">Love Letter</span>
+    </header>
+
+    <div class="poster-container" style="display: flex; align-items: center; justify-content: center;">
+        <div class="letter-container">
+            <div class="letter-header">
+                <h2>Untuk Kamu,</h2>
+                <p class="letter-subtitle">Perempuan Istimewa di Hidupku ✨</p>
+            </div>
+
+            <div class="letter-body">
+                <p class="letter-opening">Halo, Sayangku...</p>
+
+                <p>
+                    Hari ini, tanggal <strong>16 Desember</strong>, adalah hari yang spesial. Bukan cuma karena
+                    hari ini kamu bertambah satu tahun lagi, tapi karena aku punya kesempatan untuk
+                    mengingat betapa beruntungnya aku memilikimu.
+                </p>
+
+                <p>
+                    Kamu tahu nggak? Sejak kenal kamu, hidup aku jadi lebih berwarna. Senyummu yang tulus,
+                    tawamu yang menggemaskan, bahkan segala kekuranganmu yang menurutku malah jadi
+                    kelebihanmu — semuanya bikin aku makin sayang sama kamu.
+                </p>
+
+                <p>
+                    Aku nggak pernah pandai merangkai kata-kata romantis seperti di film atau novel.
+                    Tapi yang pasti, <strong>kamu adalah alasanku tersenyum setiap hari</strong>.
+                    Kamu adalah tempat pulang ternyamanku. Kamu adalah rumah bagiku.
+                </p>
+
+                <p>
+                    Di usia yang baru ini, aku doakan semoga kamu selalu diberikan kesehatan,
+                    kebahagiaan, dan kemudahan dalam segala hal. Semoga semua impian kamu tercapai,
+                    dan semoga kita bisa terus bersama melewati hari-hari indah lainnya.
+                </p>
+
+                <p class="letter-closing">
+                    Terima kasih sudah menjadi bagian terindah dalam hidupku. <br>
+                    Terima kasih sudah setia menemani hari-hariku. <br>
+                    Terima kasih sudah menjadi dirimu yang luar biasa.
+                </p>
+
+                <p class="letter-signature">
+                    <strong>Happy Birthday, Sayang! 🎂💙</strong><br>
+                    <em>I love you more than words can say.</em>
+                </p>
+
+                <p class="letter-from">
+                    — Dengan cinta,<br>
+                    <strong>Orang yang paling sayang sama kamu</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sparkle Script for continuity -->
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.9) {
+                const sparkle = document.createElement('div');
+                sparkle.classList.add('sparkle');
+                sparkle.style.left = `${e.clientX}px`;
+                sparkle.style.top = `${e.clientY}px`;
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 800);
+            }
+        });
+    </script>
+</body>
+
+</html>
